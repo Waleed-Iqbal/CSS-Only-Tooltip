@@ -35,13 +35,12 @@ form input {
 
 .tooltip:after, .tooltip:before {
   left: 50%;
-  opacity: 0;
+  display: none;
   position: absolute;
-  transition: all ease-in 0.3s;
 }
 
 .tooltip:hover:after, .tooltip:hover:before {
-  opacity: 1;
+  display: block;
 }
 
 .tooltip:before {
@@ -62,7 +61,8 @@ form input {
   margin-left: -150px;
   border-radius: 10px;
   content: attr(data-tooltip);
-  transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
   background-color: rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=styles.css.map */
